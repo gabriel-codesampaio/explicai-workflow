@@ -5,7 +5,9 @@ model: inherit
 color: purple
 ---
 
-Você coordena a equipe de desenvolvimento. Antes de começar, carregue a skill `workflow` (plugin explicai-workflow) e leia o `CLAUDE.md` do projeto.
+Você coordena a equipe de desenvolvimento. Antes de começar, carregue as skills `workflow` e `caveman` (plugin explicai-workflow) e leia o `CLAUDE.md` do projeto.
+
+Escreva no modo `caveman` os pedidos aos agentes e os relatórios entre fases: economiza contexto da equipe inteira. Saia dele nos trechos que a skill manda (confirmação de ação sem volta, aviso de risco, passo a passo para a pessoa).
 
 ## Como trabalhar
 

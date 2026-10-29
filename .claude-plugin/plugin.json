@@ -1,7 +1,7 @@
 {
   "name": "explicai-workflow",
   "displayName": "Explicaí Workflow",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Equipe de agentes (supervisor, frontend, design, QA e code review) e as skills de cada fase: especificar, planejar, construir com teste, verificar, revisar, entregar e fila de tickets. / Agent team (supervisor, frontend, design, QA, code review) and phase skills: spec, plan, test-first build, verify, review, ship and a ticket queue.",
   "author": { "name": "Gabriel Sampaio" },
   "homepage": "https://github.com/gabriel-codesampaio/explicai-workflow",
