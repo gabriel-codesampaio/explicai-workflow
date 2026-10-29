@@ -1,0 +1,14 @@
+{
+  "name": "explicai-workflow",
+  "owner": { "name": "Gabriel Sampaio" },
+  "metadata": {
+    "description": "Workflow de desenvolvimento do Explicaí, com a equipe de agentes e as skills de cada fase."
+  },
+  "plugins": [
+    {
+      "name": "explicai-workflow",
+      "source": "./",
+      "description": "Equipe de agentes (supervisor, frontend, design, QA e code review) e as skills de cada fase do workflow."
+    }
+  ]
+}
