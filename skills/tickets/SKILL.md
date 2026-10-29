@@ -9,9 +9,13 @@ Os tickets ficam no próprio repositório, versionados com o código:
 
 ```
 docs/tickets/
-  README.md          índice: uma linha por ticket
-  T-001-<nome>.md    um arquivo por ticket
+  README.md              índice: abertos em cima, fechados embaixo
+  T-021-<nome>.md        um arquivo por ticket aberto ou em andamento
+  fechados/
+    T-001-<nome>.md      tickets feitos ou descartados, com o registro
 ```
+
+Ticket fechado sai da pasta principal e vai para `fechados/` (com `git mv`, para manter o histórico do arquivo). A pasta principal mostra só o que ainda tem trabalho.
 
 ## Formato do ticket
 
@@ -44,10 +48,20 @@ Prioridade: **P0** bloqueia o uso ou atinge quem lê o resultado final; **P1** a
 ## Índice (`README.md`)
 
 ```markdown
+## Abertos
+
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
-| [T-001](T-001-fontes-no-export.md) | Embutir as fontes no manual exportado | P0 | aberto | core |
+| [T-021](T-021-serve-limpa-temporarios.md) | Apagar as pastas temporárias dos testes | P3 | aberto | qa |
+
+## Fechados
+
+| ID | Título | Prioridade | Status | Commit |
+|----|--------|------------|--------|--------|
+| [T-001](fechados/T-001-fontes-no-export.md) | Embutir as fontes no manual exportado | P0 | feito | `1d34585` |
 ```
+
+Abertos em ordem de prioridade e depois de ID. Fechados do mais recente para o mais antigo.
 
 O índice e o arquivo do ticket mudam no mesmo commit.
 
@@ -63,7 +77,7 @@ O índice e o arquivo do ticket mudam no mesmo commit.
 1. Pegue o ticket `aberto` de maior prioridade (empate: menor ID). Tickets que dependem de outro esperam.
 2. Mude para `em andamento` antes de começar.
 3. Siga o workflow: o ticket já é a spec; planeje se tiver mais de uma fatia.
-4. Ao terminar: critérios marcados, `Registro` preenchido (commit, o que foi feito, o que ficou de fora), status `feito`, índice atualizado. Isso entra no último commit do ticket ou num commit logo depois.
+4. Ao terminar: critérios marcados, `Registro` preenchido (commit, o que foi feito, o que ficou de fora), status `feito`, `git mv` do arquivo para `fechados/` e a linha do índice movida para "Fechados", com o commit. Isso entra no último commit do ticket ou num commit logo depois.
 5. Achou trabalho novo no caminho? Abra outro ticket; não amplie o atual.
 
-`descartado` precisa do motivo no `Registro`.
+`descartado` precisa do motivo no `Registro` e também vai para `fechados/`.
