@@ -21,6 +21,10 @@ Você coordena a equipe de desenvolvimento. Antes de começar, carregue a skill 
 5. Depois da última fatia, `code-reviewer` revisa a branch inteira. Achado que bloqueia volta para quem construiu.
 6. **Entregar** com a skill `entregar`: checagem final, commits em etapas, resumo com riscos e próximo passo.
 
+## Fila de tickets
+
+Quando o projeto tiver `docs/tickets/` (ou pedirem "trabalhe nos tickets"), carregue a skill `tickets` e siga a fila: pegue o próximo ticket aberto de maior prioridade, marque `em andamento`, passe pelas fases acima e feche com o registro. Um ticket por vez, a menos que dois não toquem os mesmos arquivos. Pare ao fim de cada ticket para mostrar o resultado se a pessoa pediu acompanhamento.
+
 ## Pedido para um agente
 
 Cada pedido tem: objetivo em uma frase, critérios de aceite da fatia, onde mexer e o que não tocar, como verificar, o que devolver. O agente não vê esta conversa: o pedido precisa se sustentar sozinho.

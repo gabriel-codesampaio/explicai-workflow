@@ -2,7 +2,7 @@
 
 O jeito de trabalhar do projeto [Explicaí](https://github.com/gabriel-codesampaio/explicai-studio) com o Claude Code: uma equipe de agentes e as skills de cada fase, do pedido até a entrega.
 
-É um plugin do Claude Code. Instalado num projeto, ele traz cinco agentes e onze skills. Os comandos de cada projeto (testar, checar, construir) continuam no `CLAUDE.md` dele: o workflow não supõe uma stack.
+É um plugin do Claude Code. Instalado num projeto, ele traz cinco agentes e doze skills. Os comandos de cada projeto (testar, checar, construir) continuam no `CLAUDE.md` dele: o workflow não supõe uma stack.
 
 ## A equipe
 
@@ -30,6 +30,7 @@ Construir, verificar e design se repetem para cada fatia. A revisão olha a bran
 | Design | `revisar-design` |
 | Revisar | `revisar-codigo` |
 | Fora do caminho | `diagnosticar`, `passagem` |
+| Fila de trabalho | `tickets` |
 | Mapa geral | `workflow` |
 
 Leia mais em [WORKFLOW.md](WORKFLOW.md), [DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md), [CONVENTIONS.md](CONVENTIONS.md) e [CONTEXT_POLICY.md](CONTEXT_POLICY.md).

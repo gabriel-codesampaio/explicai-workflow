@@ -25,6 +25,8 @@ Leia [WORKFLOW.md](../../WORKFLOW.md) para as fases e [DEFINITION_OF_DONE.md](..
 
 Fora do caminho: `diagnosticar` (bug cuja causa não é óbvia) e `passagem` (encerrar a sessão com trabalho pela metade).
 
+Fila de trabalho: `tickets` (transformar achados em tickets em `docs/tickets/` e trabalhar neles por prioridade).
+
 ## Contratos
 
 Entre uma fase e outra passa só o artefato descrito em [CONTEXT_POLICY.md](../../CONTEXT_POLICY.md). Um agente que recebe um pedido sem critério de aceite ou sem jeito de verificar devolve a pergunta ao supervisor antes de começar.
