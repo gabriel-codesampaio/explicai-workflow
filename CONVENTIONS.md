@@ -21,7 +21,11 @@ Regras que valem em todas as fases e para todos os agentes.
 ## Commits e entregas
 
 - Commits pequenos, um assunto por commit. O histórico é lido por outras pessoas (inclusive no LinkedIn).
-- Mensagem no idioma do projeto: primeira linha diz o que mudou; o corpo, por quê.
+- Mensagem no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/): `tipo(escopo): descrição`.
+  - Tipos: `feat` (recurso novo), `fix` (correção), `docs`, `test`, `refactor`, `style` (formatação), `perf`, `build`, `ci`, `chore`.
+  - Escopo é a parte do projeto (`export`, `editor`, `core`); pode faltar.
+  - Descrição no idioma do projeto, no imperativo e sem ponto final: `feat(export): embute as fontes da marca no HTML`.
+  - O corpo diz por quê e o que muda para quem usa. Mudança incompatível leva `!` depois do tipo e `BREAKING CHANGE:` no corpo.
 - Nunca commitar com a checagem do projeto falhando. Se o commit entrou errado, corrija num commit seguinte.
 - PR, release e metadados de pacote com descrição completa: o que muda, por quê, como testar, riscos.
 - Push na branch principal, publicação e PR só com confirmação de uma pessoa.

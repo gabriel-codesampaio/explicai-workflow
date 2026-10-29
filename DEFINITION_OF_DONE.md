@@ -10,7 +10,7 @@ Uma mudança está pronta quando:
 - [ ] **O diff foi revisado:** na proporção do risco.
 - [ ] **Complexidade acidental saiu:** depois que o comportamento está protegido por teste.
 - [ ] **Riscos estão ditos:** dados, segurança, mudança incompatível, o que não foi testado.
-- [ ] **Commits estão em etapas:** cada um com um assunto só e mensagem que diz o que mudou e por quê.
+- [ ] **Commits estão em etapas:** cada um com um assunto só, em Conventional Commits, dizendo o que mudou e por quê.
 - [ ] **Descrições estão certas:** PR, release e metadados do pacote completos, nos idiomas do projeto.
 - [ ] **O próximo passo está explícito:** merge, PR, publicação, passagem ou tarefa seguinte.
 

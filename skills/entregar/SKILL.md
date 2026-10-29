@@ -19,7 +19,7 @@ Rode a checagem completa do projeto (no `CLAUDE.md`: lint, tipos, testes e, se h
 
 - Um assunto por commit: núcleo, API, tela, testes, documentação podem ser commits separados.
 - Cada commit passa na checagem sozinho. Não commite com a checagem falhando.
-- Mensagem no idioma do projeto: a primeira linha diz o que mudou; o corpo, por quê e o que muda para quem usa.
+- Mensagem em Conventional Commits (`tipo(escopo): descrição`, ver [CONVENTIONS.md](../../CONVENTIONS.md#commits-e-entregas)), com a descrição no idioma do projeto; o corpo diz por quê e o que muda para quem usa.
 - Inclua as linhas de autoria que o ambiente pedir.
 
 ## 4. Enviar

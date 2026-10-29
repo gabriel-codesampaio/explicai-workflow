@@ -56,7 +56,7 @@ O índice e o arquivo do ticket mudam no mesmo commit.
 1. Um achado vira um ticket. Achados que só fazem sentido juntos viram um ticket só.
 2. Numere em sequência a partir do maior ID existente.
 3. Critério de aceite verificável, sem prescrever a implementação quando houver mais de um jeito bom.
-4. Commit: `Abre os tickets T-0NN a T-0MM (<origem>)`.
+4. Commit: `docs(tickets): abre T-0NN a T-0MM (<origem>)`. Commits do trabalho citam o ticket no corpo (`Fecha T-0NN`).
 
 ## Trabalhar na fila
 
