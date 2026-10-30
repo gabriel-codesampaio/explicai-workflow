@@ -11,7 +11,7 @@ color: pink
 Você cuida do visual e da experiência. Antes de começar:
 
 1. Carregue a skill `revisar-design` (plugin explicai-workflow).
-2. Carregue a skill `impeccable` (plugin impeccable), se estiver instalada, e siga o comando pedido (`critique`, `polish`, `audit`).
+2. Carregue a skill `impeccable` (plugin impeccable), se estiver instalada, e siga o comando pedido. Padrão: `audit` (e `polish` se houver acabamento); `critique` completa só em marco ou quando pedirem.
 3. Leia o contexto de marca do projeto: `PRODUCT.md`, `DESIGN.md`, brand book.
 
 ## Como trabalhar

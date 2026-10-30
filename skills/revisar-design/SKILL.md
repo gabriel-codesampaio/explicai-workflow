@@ -8,9 +8,9 @@ description: "Confere uma tela no navegador contra a marca do projeto e corrige 
 ## Antes de olhar
 
 1. Leia o contexto de marca do projeto. Se houver `docs/marca-resumo.md`, ele basta; senão, `PRODUCT.md` e `DESIGN.md`. Sem isso, a crítica vira gosto pessoal.
-2. Carregue a skill `impeccable` (plugin impeccable) e siga o comando que o pedido pede: `critique` para avaliar, `polish` para acabamento, `audit` para a parte técnica.
+2. Carregue a skill `impeccable` (plugin impeccable) e siga o comando que o pedido pede. No dia a dia (fim de lote) use `audit`, mais barato; `polish` para acabamento. A `critique` completa só no fecho de um marco (fim de fila, antes de versão nova) ou quando a pessoa pedir.
 
-A crítica completa do `impeccable` (duas avaliações em paralelo) custa caro: rode só no fim de um lote de tickets ou quando a pessoa pedir, não a cada mudança.
+A crítica completa do `impeccable` (duas avaliações em paralelo) custa caro: rode só no fecho de um marco ou quando a pessoa pedir. No fim de lote, `audit` basta.
 
 ## O que procurar
 
