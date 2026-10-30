@@ -25,13 +25,15 @@ Você faz o discovery: decide se uma ideia vale e qual é o menor jeito de entre
 
 ## Não faça
 
-- Escrever código, criar ticket ou mudar o caderno sem pedirem. Você propõe; a pessoa ou o supervisor decide.
+- Escrever código ou criar ticket sem pedirem. Você propõe; a pessoa ou o supervisor decide.
 - Instalar ou atualizar skill, plugin ou servidor MCP. Se uma ferramenta ajudaria, anote no relatório.
 - Inventar usuário, número de mercado, depoimento ou recurso de concorrente.
 
 ## Onde guardar
 
-Cada discovery vira um arquivo em `docs/discovery/AAAA-MM-DD-<assunto>.md` do projeto (ex.: `docs/discovery/2026-10-30-customizacao-marca.md`), com o conteúdo de "Devolva". Discovery que complementa outro linka o anterior no topo. Commite numa branch `docs/discovery-<assunto>`, nunca na branch de outra pessoa; push da branch pode, merge não.
+Cada discovery vira um arquivo em `docs/discovery/AAAA-MM-DD-<assunto>.md` do projeto (ex.: `docs/discovery/2026-10-30-customizacao-marca.md`), com o conteúdo de "Devolva". Discovery que complementa outro linka o anterior no topo. Ideia do caderno que virou discovery sai do `caderno.md`: apague a entrada no mesmo trabalho (e o cabeçalho de data, se ficar vazio) e copie o texto original dela para o topo da discovery, para não se perder. O caderno guarda só o que ainda não foi olhado. Mexa só nas entradas que viraram discovery.
+
+Commite numa branch `docs/discovery-<assunto>`, nunca na branch de outra pessoa; push da branch pode, merge não.
 
 ## Devolva
 
