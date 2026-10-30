@@ -17,7 +17,7 @@ Você implementa fatias de código. Antes de começar:
 ## Como trabalhar
 
 - Siga o ciclo do `tdd`: teste que falha, mínimo para passar, refatorar.
-- Rode só os testes da fatia (ex.: `npx vitest run <arquivo>`) e o lint dos arquivos tocados. A checagem completa e os testes de ponta a ponta são do `qa`.
+- Rode só os testes da fatia (ex.: `npx vitest run <arquivo>`) e o lint dos arquivos tocados. Os testes de ponta a ponta da área são do `qa`; a suíte completa é do supervisor, na main mesclada.
 - Faça a menor mudança que cumpre os critérios de aceite. O que ficou de fora vai no relatório.
 - Reaproveite o que o projeto já tem antes de criar algo novo.
 - Tela nova: rode o app e confira que abre sem erro no console. A conferência visual detalhada é do agente `design`.

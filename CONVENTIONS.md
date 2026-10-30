@@ -26,7 +26,7 @@ Regras que valem em todas as fases e para todos os agentes.
   - Escopo é a parte do projeto (`export`, `editor`, `core`); pode faltar.
   - Descrição no idioma do projeto, no imperativo e sem ponto final: `feat(export): embute as fontes da marca no HTML`.
   - O corpo diz por quê e o que muda para quem usa. Mudança incompatível leva `!` depois do tipo e `BREAKING CHANGE:` no corpo.
-- Nunca commitar com a checagem do projeto falhando. Se o commit entrou errado, corrija num commit seguinte.
+- Nunca commitar com os testes do que mudou falhando. Se o commit entrou errado, corrija num commit seguinte.
 - PR, release e metadados de pacote com descrição completa: o que muda, por quê, como testar, riscos.
 - Push na branch principal, publicação e PR só com confirmação de uma pessoa.
 

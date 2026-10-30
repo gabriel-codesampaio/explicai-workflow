@@ -1,14 +1,14 @@
 ---
 name: verificar
-description: "Junta evidência de que uma fatia funciona: roda a checagem do projeto, os testes da fatia e confere cada critério de aceite. Use depois de construir cada fatia e antes da revisão."
+description: "Junta evidência de que uma fatia funciona: roda os testes do que a fatia tocou e confere cada critério de aceite. Use depois de construir cada fatia e antes da revisão."
 ---
 
 # Verificar a fatia
 
 ## Passos
 
-1. Rode a checagem do projeto (`CLAUDE.md`). Leia a saída inteira, não só o resumo.
-2. Rode os testes ligados à fatia. Se a fatia tem tela, siga também `testar-interface`.
+1. Rode só o que a demanda pede (comandos no `CLAUDE.md`): os testes de unidade do módulo tocado e o lint/tipos se o código mudou. Leia a saída inteira, não só o resumo. A suíte completa não roda por fatia: é da main mesclada, antes do push (`entregar`).
+2. Rode os testes de ponta a ponta da área tocada (`-g` ou por arquivo). Se a fatia tem tela, siga também `testar-interface`.
 3. Para cada critério de aceite, diga como ele foi provado: qual teste, qual comando, qual print.
 4. Procure o que pode ter quebrado em volta: quem chama o código alterado, dados já salvos no formato antigo, o outro tema, a tela estreita.
 
