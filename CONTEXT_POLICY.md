@@ -9,6 +9,10 @@ Cada agente começa sem o histórico da conversa. O que ele recebe precisa caber
 - Prefira resumo estruturado a transcrição longa.
 - Guarde decisões, riscos e evidência. Corte narrativa.
 - Não repita a spec em toda fase: cite os critérios de aceite que importam.
+- Saída de comando curta: o resumo final (ex.: `Tests 92 passed`), reporter de pontos nos testes de ponta a ponta. A saída inteira só quando algo falha, e só o trecho da falha.
+- A mesma verificação roda uma vez por commit. Quem vem depois cita o commit e o resultado.
+- Imagem e captura completa da página estão entre o que mais pesa: um print por tela e estado, medidas por script.
+- Cada agente começa do zero: mande no pedido o que ele precisa (arquivos, critério, comando) para ele não reler o projeto inteiro.
 
 ## O que passa de uma fase para a outra
 

@@ -23,6 +23,7 @@ Ticket fechado sai da pasta principal e vai para `fechados/` (com `git mv`, para
 # T-001: <título curto, no imperativo>
 
 - Prioridade: P0 | P1 | P2 | P3
+- Tamanho: P | M | G
 - Status: aberto | em andamento | feito | descartado
 - Agente: frontend | design | qa | core
 - Origem: <crítica de design 2026-10-29, revisão, pedido>
@@ -42,6 +43,8 @@ Teste, comando ou fluxo na tela.
 ## Registro
 <!-- preenchido ao fechar: commit, o que foi feito, o que ficou de fora -->
 ```
+
+Tamanho define o trilho: **P** (texto, cor, token, uma linha com teste) sem qa nem design; **M** com qa; **G** (tela ou fluxo novo, formato de dados) com a equipe toda.
 
 Prioridade: **P0** bloqueia o uso ou atinge quem lê o resultado final; **P1** atrapalha bastante ou é o pedido principal; **P2** incomoda, há como contornar; **P3** acabamento.
 
@@ -78,6 +81,7 @@ O índice e o arquivo do ticket mudam no mesmo commit.
 2. Mude para `em andamento` antes de começar.
 3. Siga o workflow: o ticket já é a spec; planeje se tiver mais de uma fatia.
 4. Ao terminar: critérios marcados, `Registro` preenchido (commit, o que foi feito, o que ficou de fora), status `feito`, `git mv` do arquivo para `fechados/` e a linha do índice movida para "Fechados", com o commit. Isso entra no último commit do ticket ou num commit logo depois.
-5. Achou trabalho novo no caminho? Abra outro ticket; não amplie o atual.
+5. Achou trabalho novo no caminho? Uma linha em "Achados" no relatório, sem investigar. Quem decide se vira ticket é o supervisor ou a pessoa; não amplie o atual.
+6. Trabalhe em lotes de 2 a 3 tickets por sessão e feche o lote com a skill `passagem`.
 
 `descartado` precisa do motivo no `Registro` e também vai para `fechados/`.

@@ -7,8 +7,10 @@ description: "Confere uma tela no navegador contra a marca do projeto e corrige 
 
 ## Antes de olhar
 
-1. Leia o contexto de produto e marca do projeto (`PRODUCT.md`, `DESIGN.md`, brand book). Sem isso, a crítica vira gosto pessoal.
+1. Leia o contexto de marca do projeto. Se houver `docs/marca-resumo.md`, ele basta; senão, `PRODUCT.md` e `DESIGN.md`. Sem isso, a crítica vira gosto pessoal.
 2. Carregue a skill `impeccable` (plugin impeccable) e siga o comando que o pedido pede: `critique` para avaliar, `polish` para acabamento, `audit` para a parte técnica.
+
+A crítica completa do `impeccable` (duas avaliações em paralelo) custa caro: rode só no fim de um lote de tickets ou quando a pessoa pedir, não a cada mudança.
 
 ## O que procurar
 
@@ -27,7 +29,7 @@ Para cada achado, proponha uma troca concreta que venha da marca (cor, fonte, me
 
 ## Como trabalhar
 
-- Veja a tela de verdade no navegador (Chrome DevTools MCP), nas larguras e temas que o projeto suporta. Print antes e depois.
+- Veja a tela de verdade no navegador (Chrome DevTools MCP). Três prints por tela: 1440 claro, 1440 escuro, 375 claro. Medidas (largura, contraste, transbordo) por script, não por print.
 - Mude estilo e marcação, não regra de negócio. Tokens de cor e fonte ficam no arquivo de tokens do projeto, não espalhados nos componentes.
 - Depois de mudar, rode a checagem do projeto e confira a tela de novo.
 

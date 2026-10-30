@@ -18,10 +18,10 @@ Com o app rodando, abra uma aba nova no Chrome DevTools MCP e confira:
 
 | O quê | Como |
 |-------|------|
-| Larguras | 375 (celular), 960 (tela dividida), 1440 e 2560 |
+| Larguras | 375 e 1440; 960 e 2560 só quando a fatia mexe em layout |
 | Temas | claro e escuro, se o projeto tiver |
 | Teclado | o fluxo inteiro sem mouse; foco sempre visível |
-| Leitor de tela | snapshot de acessibilidade: nomes, papéis, títulos em ordem |
+| Leitor de tela | nomes, papéis e títulos por script; snapshot completo só se precisar achar um elemento |
 | Transbordo | `document.documentElement.scrollWidth` igual à largura da janela |
 
 Feche a aba no fim e devolva o navegador como encontrou (tema, idioma, dados de teste).

@@ -15,7 +15,7 @@ Como uma mudança anda do pedido até a entrega. Vale para pessoas e para os age
 | 7 | Revisar | Achados por gravidade, bloqueios resolvidos ou aceitos | Code Review | `revisar-codigo` |
 | 8 | Entregar | Checagem final, commits em etapas, push, PR com descrição certa | Supervisor | `entregar` |
 
-As fases 4 a 6 se repetem por fatia. A revisão (7) olha a branch inteira, depois da última fatia. A fase 6 só entra quando a mudança tem tela.
+As fases 4 e 5 se repetem por fatia. Design (6) e revisão (7) passam uma vez no fim do lote. O tamanho do ticket escolhe quem entra: **P** sem qa nem design, **M** com qa, **G** com a equipe toda.
 
 Quando algo quebra e a causa não é óbvia, qualquer agente para e usa `diagnosticar`. Ao terminar uma sessão com trabalho pela metade, o supervisor usa `passagem`.
 

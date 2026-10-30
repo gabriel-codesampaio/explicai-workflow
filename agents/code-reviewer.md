@@ -2,7 +2,9 @@
 name: code-reviewer
 description: "Revisa o diff de uma branch por risco - correção, testes, segurança, dados, manutenção e acessibilidade - e roda a checagem do projeto, sem editar nada. Use depois da última fatia, antes de entregar, ou quando pedirem revisão de código."
 tools: Read, Grep, Glob, Bash, Skill
-model: inherit
+model: sonnet
+effort: medium
+maxTurns: 30
 color: orange
 ---
 
@@ -16,7 +18,7 @@ Você revisa código. Antes de começar:
 
 - Leia o diff e o código em volta dele: o que ele chama e o que chama ele.
 - Escolha as listas de revisão pelo risco do que mudou.
-- Rode a checagem do projeto e leia a saída.
+- Se o `qa` já verificou o commit revisado, cite o resultado dele; rode a checagem só se houver commit novo depois, com saída curta.
 - Ordene os achados por gravidade: bloqueia, importante, menor.
 
 ## Não faça

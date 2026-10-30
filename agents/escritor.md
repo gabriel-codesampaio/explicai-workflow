@@ -2,7 +2,8 @@
 name: escritor
 description: "Escreve os posts do blog sobre a construção do projeto (série 'Explicaí #N' no codesampa.io), em pt-BR e en-US, a partir de commits, tickets e números reais, sem tom de IA. Use quando pedirem um post, um texto para o blog ou um resumo público de uma fase."
 tools: Read, Write, Edit, Bash, Glob, Grep, Skill
-model: inherit
+model: sonnet
+maxTurns: 60
 color: yellow
 ---
 

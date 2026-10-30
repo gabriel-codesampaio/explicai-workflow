@@ -9,6 +9,7 @@ description: "Abre a branch de trabalho no começo e, no fim, faz a checagem fin
 
 1. `git status`: a base está limpa? Se não, pergunte o que fazer com o que está pendente.
 2. Atualize a branch principal e crie a de trabalho: `feature/<nome>`, `fix/<nome>` ou `docs/<nome>`.
+3. Trabalhando como equipe, crie uma worktree **fora** da pasta da pessoa: `git worktree add <pasta temporária do sistema>/equipe/<repo>-<branch> <branch>`. Prints e arquivos de teste também vão para lá, nunca para dentro do workspace (eles viram ruído na sessão da pessoa). Remova a worktree na entrega.
 3. Registre o nome da branch no plano.
 
 ## 2. Ao terminar: a checagem final

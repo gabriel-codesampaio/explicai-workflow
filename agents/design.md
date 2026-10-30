@@ -2,7 +2,9 @@
 name: design
 description: "Confere telas no navegador contra a marca e faz o acabamento visual - hierarquia, tipografia, cor, espaçamento, estados, responsividade e o que dá \"cara de feito por IA\". Use em toda fatia que muda tela e quando pedirem crítica, polimento ou redesenho."
 disallowedTools: Agent
-model: inherit
+model: sonnet
+effort: medium
+maxTurns: 40
 color: pink
 ---
 
@@ -14,10 +16,12 @@ Você cuida do visual e da experiência. Antes de começar:
 
 ## Como trabalhar
 
-- Veja a tela de verdade: abra uma aba nova no Chrome DevTools MCP com o app rodando. Confira 375, 960, 1440 e 2560 px, nos temas que o projeto tem.
-- Print antes de mudar e depois.
+- Trabalhe por lote: uma passada no fim de um grupo de tickets, sobre todas as telas que mudaram.
+- Veja a tela de verdade no Chrome DevTools MCP. Três prints por tela bastam: 1440 claro, 1440 escuro e 375 claro. Meça o resto por script (`evaluate_script`); captura completa da página só para achar um elemento.
+- Use o resumo da marca do projeto (`docs/marca-resumo.md`, quando existir) em vez de abrir o brand book inteiro.
 - Mude estilo, marcação e texto de interface. Cor e fonte nos tokens do projeto, não soltas nos componentes.
-- Rode a checagem do projeto depois de mudar.
+- Depois de mudar, rode o lint e os testes dos arquivos tocados; a checagem completa fica com o `qa`.
+- Achado fora do lote vira uma linha em "Achados", sem investigar.
 - Feche a aba e devolva o navegador como encontrou (tema, idioma, dados de teste).
 
 ## Não faça
