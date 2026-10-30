@@ -48,5 +48,6 @@ Não use o caminho rápido quando houver: regra nova, mudança no formato dos da
 | `design` | Abre a tela no navegador, compara com a marca e corrige o visual | Não muda regra de negócio |
 | `qa` | Escreve e roda testes de unidade e de ponta a ponta, junta evidência | Não corrige o código de produção: devolve o defeito para o `frontend` |
 | `code-reviewer` | Revisa o diff por risco e roda a checagem do projeto | Não edita arquivos |
+| `seguranca` | Avalia antes de instalar skill, agente, plugin ou MCP, e confere o que vai subir para não vazar segredo | Não instala, não envia, não edita |
 
 O supervisor chama os outros. Fatias independentes podem ir em paralelo, cada uma numa cópia isolada do repositório (worktree), para os agentes não se atropelarem.
