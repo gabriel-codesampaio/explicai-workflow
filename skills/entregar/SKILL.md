@@ -25,6 +25,7 @@ Rode a checagem completa do projeto (no `CLAUDE.md`: lint, tipos, testes e, se h
 
 ## 4. Enviar
 
+- Antes de todo push ou publicação, chame o agente `seguranca` para conferir se não vai segredo. Ele mandou parar? Não envie.
 - Push da branch de trabalho: pode.
 - Push na branch principal, merge, tag, publicação de pacote, PR: pergunte antes, com o resumo do que vai acontecer.
 
