@@ -8,7 +8,7 @@
     {
       "name": "explicai-workflow",
       "source": "./",
-      "description": "Equipe de agentes (supervisor, frontend, design, QA e code review) e as skills de cada fase do workflow."
+      "description": "Equipe de agentes (supervisor, frontend, design, QA, code review, segurança, discovery e escritor do blog) e as skills de cada fase do workflow. / Agent team and the skills for each workflow phase."
     }
   ]
 }
