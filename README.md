@@ -14,6 +14,7 @@ O jeito de trabalhar do projeto [Explicaí](https://github.com/gabriel-codesampa
 | `qa` | Escreve e roda testes de unidade e de ponta a ponta e junta a evidência |
 | `code-reviewer` | Revisa o diff por risco e roda a checagem, sem editar nada |
 | `escritor` | Escreve os posts do blog sobre a construção do projeto, em pt-BR e en-US, a partir de commits e números reais |
+| `discovery` | Acha features novas e torna factível uma ideia solta: pesquisa, opções com esforço e riscos, rascunho de spec |
 
 ## As fases
 
