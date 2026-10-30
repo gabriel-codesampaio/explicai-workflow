@@ -1,6 +1,8 @@
 ---
 name: tickets
-description: "Controle de tickets em Markdown dentro do projeto (docs/tickets/) - criar tickets a partir de uma crítica, revisão ou spec, escolher o próximo por prioridade, mudar o status e fechar com o commit. Use para transformar achados em trabalho rastreável e para a equipe trabalhar na fila."
+description: "Controle de tickets em Markdown dentro do projeto (docs/tickets/) - criar tickets a partir de uma crítica, revisão ou spec, escolher o próximo por prioridade, mudar o status e fechar com o commit. Use para transformar achados em trabalho rastreável e para a equipe trabalhar na fila. Roda à parte, sem ver a conversa: passe o pedido completo (ação, ticket, título, prioridade, commit, achados)."
+context: fork
+model: haiku
 ---
 
 # Tickets
