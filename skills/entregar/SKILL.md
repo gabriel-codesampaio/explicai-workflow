@@ -14,7 +14,7 @@ description: "Abre a branch de trabalho no começo e, no fim, faz a checagem fin
 
 ## 2. Ao terminar: a checagem final
 
-Rode a checagem completa do projeto (no `CLAUDE.md`: lint, tipos, testes e, se houver tela, os testes de ponta a ponta). Leia a saída. Falhou? Volte para a fase certa: não entregue.
+Na fatia, rode só os testes do que mudou (módulo e área tocados). A checagem completa só roda na **main mesclada, antes do push** (supervisor): rode-a lá (no `CLAUDE.md`: lint, tipos, testes e, se houver tela, os testes de ponta a ponta). Leia a saída. Falhou? Volte para a fase certa: não entregue.
 
 ## 3. Commits em etapas
 

@@ -4,7 +4,7 @@ Uma mudança está pronta quando:
 
 - [ ] **O objetivo está claro:** problema, escopo e critérios de aceite entendidos.
 - [ ] **O feito bate com o pedido:** o que ficou de fora está dito, com o motivo.
-- [ ] **A checagem do projeto passou nesta sessão:** lint, tipos e testes, com a saída registrada.
+- [ ] **A checagem do projeto passou nesta sessão:** na fatia, os testes do que mudou; na main mesclada, antes do push, a suíte completa (lint, tipos, unidade e e2e), com a saída registrada.
 - [ ] **Comportamento novo tem teste:** bug corrigido ganha um teste que falhava antes.
 - [ ] **Tela nova foi vista funcionando:** no navegador, nos temas e larguras que o projeto suporta.
 - [ ] **O diff foi revisado:** na proporção do risco.

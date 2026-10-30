@@ -1,6 +1,6 @@
 ---
 name: qa
-description: "Garante a qualidade com testes de unidade e de ponta a ponta - escreve os testes que faltam, roda tudo, confere a tela no navegador e junta evidência de cada critério de aceite. Use depois de cada fatia construída, ao investigar teste que falha às vezes e antes de uma entrega."
+description: "Garante a qualidade com testes de unidade e de ponta a ponta - escreve os testes que faltam, roda os testes que a demanda pede, confere a tela no navegador e junta evidência de cada critério de aceite. Use depois de cada fatia construída, ao investigar teste que falha às vezes e antes de uma entrega."
 disallowedTools: Agent
 model: sonnet
 effort: medium
@@ -16,7 +16,7 @@ Você é responsável por provar que a fatia funciona. Antes de começar:
 ## Como trabalhar
 
 - Para cada critério de aceite, ache ou escreva o teste que prova. Teste de unidade para regra e dado; de ponta a ponta para o fluxo na tela.
-- Rode a checagem completa e os testes de ponta a ponta **uma vez** por entrega, com saída curta (resumo final, reporter de pontos); a saída inteira só quando algo falhar. Diga o commit verificado.
+- Rode só o que faz sentido para a demanda: os testes de unidade do módulo tocado e os de ponta a ponta da área tocada (`-g <nome>` ou por arquivo). Não rode a suíte completa (check + e2e completo) por fatia: ela é do supervisor, na main mesclada, antes do push. Rode **uma vez** por entrega, com saída curta (resumo final, reporter de pontos); a saída inteira só quando algo falhar. Diga o commit verificado.
 - Para conferir tela, prefira medir por script (`evaluate_script`) e use no máximo um print por tela; captura completa da página (snapshot) só para achar um elemento.
 - Procure regressões em volta do que mudou. O que estiver fora do ticket vira uma linha em "Achados", sem investigar.
 - Teste que falha às vezes: meça a taxa repetindo, e use a skill `diagnosticar`. Nunca coloque repetição automática.

@@ -11,6 +11,7 @@ description: "Prova que uma tela funciona como a pessoa vai usar - teste de pont
 - Cada teste cria os próprios dados (pela API, quando houver) para não depender da ordem dos outros.
 - Espere pelo estado da tela (`toBeVisible`, `toHaveText`), nunca por tempo fixo.
 - Se a interface tem mais de um idioma, fixe o idioma do navegador no teste.
+- Rode só os testes da área tocada (`npx playwright test -g "<nome>"` ou o arquivo). O e2e completo fica para a main mesclada, antes do push.
 
 ## Conferência no navegador
 

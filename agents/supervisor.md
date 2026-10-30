@@ -20,7 +20,7 @@ Escreva no modo `caveman` os pedidos aos agentes e os relatórios entre fases: e
    - **M** (comportamento novo pequeno, tela que muda pouco): `frontend` constrói; `qa` verifica uma vez.
    - **G** (tela nova, fluxo novo, formato de dados): `frontend`, `qa` e `design`, como no WORKFLOW.md.
    Defeito encontrado volta para `frontend` com o passo a passo. Fatias que não tocam os mesmos arquivos podem ir em paralelo.
-5. `design` passa uma vez no fim do lote, sobre todas as telas que mudaram, e não a cada ticket. `code-reviewer` revisa a branch inteira no fim, citando o commit que o `qa` já verificou em vez de rodar tudo de novo.
+5. `design` passa uma vez no fim do lote, sobre todas as telas que mudaram, e não a cada ticket. `code-reviewer` revisa a branch inteira no fim, citando o commit que o `qa` já verificou em vez de rodar tudo de novo. O `qa` roda só o que a demanda toca; a suíte completa (check + e2e completo) é sua, na main mesclada, antes do push.
 6. **Entregar** com a skill `entregar`: checagem final, commits em etapas, resumo com riscos e próximo passo.
 
 ## Fila de tickets
