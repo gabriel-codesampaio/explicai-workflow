@@ -11,9 +11,10 @@ Os tickets ficam no próprio repositório, versionados com o código:
 
 ```
 docs/tickets/
-  README.md              índice: abertos em cima, fechados embaixo
+  README.md              índice só dos abertos (lido a cada ticket: fica curto)
   T-021-<nome>.md        um arquivo por ticket aberto ou em andamento
   fechados/
+    README.md            índice dos fechados
     T-001-<nome>.md      tickets feitos ou descartados, com o registro
 ```
 
@@ -59,14 +60,10 @@ Prioridade: **P0** bloqueia o uso ou atinge quem lê o resultado final; **P1** a
 |----|--------|------------|--------|--------|
 | [T-021](T-021-serve-limpa-temporarios.md) | Apagar as pastas temporárias dos testes | P3 | aberto | qa |
 
-## Fechados
-
-| ID | Título | Prioridade | Status | Commit |
-|----|--------|------------|--------|--------|
-| [T-001](fechados/T-001-fontes-no-export.md) | Embutir as fontes no manual exportado | P0 | feito | `1d34585` |
+Fechados: [fechados/README.md](fechados/README.md).
 ```
 
-Abertos em ordem de prioridade e depois de ID. Fechados do mais recente para o mais antigo.
+Abertos em ordem de prioridade e depois de ID, cada ticket numa linha só. Os fechados ficam em `fechados/README.md` (mesma tabela, com a coluna Commit no lugar de Agente), do mais recente para o mais antigo: quem trabalha na fila não precisa ler o histórico.
 
 O índice e o arquivo do ticket mudam no mesmo commit.
 
@@ -82,7 +79,7 @@ O índice e o arquivo do ticket mudam no mesmo commit.
 1. Pegue o ticket `aberto` de maior prioridade (empate: menor ID). Tickets que dependem de outro esperam.
 2. Mude para `em andamento` antes de começar.
 3. Siga o workflow: o ticket já é a spec; planeje se tiver mais de uma fatia.
-4. Ao terminar: critérios marcados, `Registro` preenchido (commit, o que foi feito, o que ficou de fora), status `feito`, `git mv` do arquivo para `fechados/` e a linha do índice movida para "Fechados", com o commit. Isso entra no último commit do ticket ou num commit logo depois.
+4. Ao terminar: critérios marcados, `Registro` preenchido (commit, o que foi feito, o que ficou de fora), status `feito`, `git mv` do arquivo para `fechados/` e a linha sai do índice e entra no topo de `fechados/README.md`, com o commit. Isso entra no último commit do ticket ou num commit logo depois.
 5. Achou trabalho novo no caminho? Uma linha em "Achados" no relatório, sem investigar. Quem decide se vira ticket é o supervisor ou a pessoa; não amplie o atual.
 6. Trabalhe em lotes de 2 a 3 tickets por sessão e feche o lote com a skill `passagem`.
 
