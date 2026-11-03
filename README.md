@@ -9,7 +9,7 @@ O jeito de trabalhar do projeto [Explicaí](https://github.com/gabriel-codesampa
 | Agente | Papel |
 |--------|-------|
 | `supervisor` | Recebe o pedido, especifica, planeja em fatias, distribui, junta os resultados e entrega |
-| `frontend` | Implementa cada fatia com teste primeiro |
+| `frontend` | Implementa cada fatia, com teste primeiro quando há lógica |
 | `design` | Confere a tela no navegador contra a marca e faz o acabamento visual |
 | `qa` | Escreve e roda testes de unidade e de ponta a ponta e junta a evidência |
 | `code-reviewer` | Revisa o diff por risco e roda a checagem, sem editar nada |
