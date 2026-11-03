@@ -25,6 +25,7 @@ Bug: o primeiro teste reproduz o bug e falha. A correção vai na causa, no cód
 - Comportamento observável, não detalhe de implementação.
 - Casos de borda que importam: vazio, muito grande, dado vindo de fora estragado, caractere especial.
 - Ida e volta para tudo que é salvo e lido de novo: salvar e abrir não pode mudar o conteúdo.
+- Gravação: duas ao mesmo tempo não perdem mudança, e falha no meio não deixa arquivo pela metade.
 - Sem mock do que dá para usar de verdade barato (disco em pasta temporária, servidor numa porta livre).
 
 ## Ao terminar a fatia
@@ -34,6 +35,7 @@ Devolva ao supervisor:
 ```markdown
 - Arquivos: caminho:linha, o que mudou
 - Decisões: uma linha cada
+- Vermelho: a linha do erro que o teste deu antes da correção
 - Testes: criados/alterados e o comando que passou
 - Pendente: o que ficou de fora e por quê
 ```
