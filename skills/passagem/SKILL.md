@@ -5,7 +5,7 @@ description: "Registra o estado do trabalho para a próxima sessão continuar se
 
 # Passagem
 
-Escreva em `docs/passagem.md` no projeto (ou na descrição do PR em rascunho), substituindo a anterior:
+Escreva em `docs/passagem.md` no projeto (ou na descrição do PR em rascunho), substituindo a anterior. Um arquivo só, sem data no nome: o histórico fica no git. Até 40 linhas.
 
 ```markdown
 # Passagem: <data>
