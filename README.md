@@ -66,7 +66,7 @@ Para testar uma cópia local sem instalar: `claude --plugin-dir caminho/para/exp
 
 - `design` usa o plugin [impeccable](https://github.com/pbakaus/impeccable) para crítica e acabamento.
 - `frontend` e `code-reviewer` usam as skills `vercel-react-best-practices` e `vercel-composition-patterns` (`npx skills add vercel-labs/agent-skills`) em projetos React.
-- `design` e `qa` usam o Chrome DevTools MCP para ver a tela de verdade.
+- `design` e `qa` veem a tela de verdade por script Playwright, que gasta menos tokens; o Chrome DevTools MCP fica para depurar o que o script não mostra.
 - `escritor` usa o plugin [humanizer](https://github.com/blader/humanizer) para tirar o tom de IA e, se instaladas, as skills `brand` e `conversion-copywriting`.
 
 Sem eles, os agentes funcionam, só que sem essas checagens extras.

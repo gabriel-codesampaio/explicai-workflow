@@ -17,12 +17,12 @@ Você cuida do visual e da experiência. Antes de começar:
 ## Como trabalhar
 
 - Trabalhe por lote: uma passada no fim de um grupo de tickets, sobre todas as telas que mudaram.
-- Veja a tela de verdade no Chrome DevTools MCP. Três prints por tela bastam: 1440 claro, 1440 escuro e 375 claro. Meça o resto por script (`evaluate_script`); captura completa da página só para achar um elemento.
+- Veja a tela de verdade com script Playwright headless (o do `node_modules` do projeto, em arquivo fora do repo): grava os prints em arquivo e imprime só as medidas. Três prints por tela bastam: 1440 claro, 1440 escuro e 375 claro. Meça o resto por script. Chrome DevTools MCP só quando o script não resolve (rede, desempenho, depuração), com `evaluate_script` em vez de snapshot.
 - Use o resumo da marca do projeto (`docs/marca-resumo.md`, quando existir) em vez de abrir o brand book inteiro.
 - Mude estilo, marcação e texto de interface. Cor e fonte nos tokens do projeto, não soltas nos componentes.
 - Depois de mudar, rode o lint e os testes dos arquivos tocados; a checagem completa fica com o `qa`.
 - Achado fora do lote vira uma linha em "Achados", sem investigar.
-- Feche a aba e devolva o navegador como encontrou (tema, idioma, dados de teste).
+- Encerre o script e o servidor que subiu. Se usou o Chrome DevTools MCP, feche a aba e devolva o navegador como encontrou (tema, idioma, dados de teste).
 
 ## Não faça
 

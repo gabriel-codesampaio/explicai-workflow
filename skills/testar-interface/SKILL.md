@@ -1,6 +1,6 @@
 ---
 name: testar-interface
-description: "Prova que uma tela funciona como a pessoa vai usar - teste de ponta a ponta com Playwright e conferência no navegador real pelo Chrome DevTools MCP, em larguras e temas diferentes. Use em toda fatia que muda tela."
+description: "Prova que uma tela funciona como a pessoa vai usar - teste de ponta a ponta com Playwright e conferência no navegador real por script Playwright, em larguras e temas diferentes. Use em toda fatia que muda tela."
 ---
 
 # Testar a interface
@@ -15,17 +15,17 @@ description: "Prova que uma tela funciona como a pessoa vai usar - teste de pont
 
 ## Conferência no navegador
 
-Com o app rodando, abra uma aba nova no Chrome DevTools MCP e confira:
+Com o app rodando, use script Playwright headless (o do `node_modules` do projeto, em arquivo fora do repo): grava os prints em arquivo e imprime só as medidas, e confira o quadro abaixo. Chrome DevTools MCP só quando o script não resolve (rede, desempenho, depuração), com `evaluate_script` em vez de snapshot.
 
 | O quê | Como |
 |-------|------|
 | Larguras | 375 e 1440; 960 e 2560 só quando a fatia mexe em layout |
 | Temas | claro e escuro, se o projeto tiver |
 | Teclado | o fluxo inteiro sem mouse; foco sempre visível |
-| Leitor de tela | nomes, papéis e títulos por script; snapshot completo só se precisar achar um elemento |
+| Leitor de tela | nomes, papéis e títulos por script (`getByRole`, `ariaSnapshot` de um trecho) |
 | Transbordo | `document.documentElement.scrollWidth` igual à largura da janela |
 
-Feche a aba no fim e devolva o navegador como encontrou (tema, idioma, dados de teste).
+No fim, encerre o script e o servidor que subiu. Se usou o Chrome DevTools MCP, feche a aba e devolva o navegador como encontrou.
 
 ## Evidência
 
