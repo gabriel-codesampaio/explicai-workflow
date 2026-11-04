@@ -29,7 +29,7 @@ Para cada achado, proponha uma troca concreta que venha da marca (cor, fonte, me
 
 ## Como trabalhar
 
-- Veja a tela de verdade no navegador (Chrome DevTools MCP). Três prints por tela: 1440 claro, 1440 escuro, 375 claro. Medidas (largura, contraste, transbordo) por script, não por print.
+- Veja a tela de verdade com script Playwright headless (o do `node_modules` do projeto, em arquivo fora do repo): grava os prints em arquivo e imprime só as medidas. Três prints por tela: 1440 claro, 1440 escuro, 375 claro. Medidas (largura, contraste, transbordo) por script, não por print. Chrome DevTools MCP só quando o script não resolve.
 - Mude estilo e marcação, não regra de negócio. Tokens de cor e fonte ficam no arquivo de tokens do projeto, não espalhados nos componentes.
 - Depois de mudar, rode a checagem do projeto e confira a tela de novo.
 
